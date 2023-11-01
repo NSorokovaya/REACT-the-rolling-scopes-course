@@ -1,0 +1,29 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header {
+  border-bottom: 1px solid #3535ac;
+  background-color: #a7a7ba;
+}
+
+.navbar {
+  padding: 30px 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  gap: 15px;
+}
+
+.navLink {
+  font-size: large;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navLink:hover,
+.navLink:focus {
+  color: #3535ac;
+}
