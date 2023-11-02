@@ -1,17 +1,15 @@
-import { Loader } from './Loader';
+import Loader from '../components/Loader/Loader';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import { AditionalInfo } from 'components/DetailedMovie/AditionalInfo';
-import { DetailedMovie } from 'components/DetailedMovie/DetailedMovie';
+import DetailedMovie from '../components/DetailedMovie/DetailedMovie';
 
-const MovieDetails = () => {
+const MovieDetails: React.FC = () => {
   return (
     <>
       <DetailedMovie />
-      <AditionalInfo />
-    <Suspense fallback={<Loader/>}>
+      <Suspense fallback={<Loader/>}>
         <Outlet/>
-    </Suspense>
+      </Suspense>
     </>
   );
 };

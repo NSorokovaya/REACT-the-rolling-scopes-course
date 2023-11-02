@@ -10,7 +10,7 @@ export interface MovieDetails {
   imdb_id: string; 
   original_language: string; 
   original_title: string; 
-  overview: string; 
+  overview   : string; 
   popularity: number; 
   poster_path: string; 
   production_companies: Array<{
@@ -38,10 +38,6 @@ export interface MovieDetails {
   vote_average: number; 
   vote_count: number; 
 
-}
- export interface Movies {
-  id: number;
-  title: string;
 }
 
 export interface SearchBoxProps {

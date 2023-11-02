@@ -1,11 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 import css from './MoviesList.module.css';
-import { Movies } from '../../types/interfaces';
+import { MovieDetails } from '../../types/interfaces';
 
 
 
 interface MoviesListProps {
-  movies: Movies[];
+  movies: MovieDetails[];
 }
 
 export const MoviesList: React.FC<MoviesListProps> = ({ movies }) => {
